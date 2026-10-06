@@ -1,0 +1,4 @@
+User-agent:*
+allow: /
+
+sitemap: https://jonathan15082004.github.io/Escrime/sitemap.xml
