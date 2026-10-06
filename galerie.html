@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101719">
+  <title>Galerie — Bell A Nkonen Jonathan</title>
+
+  <style>
+    :root {
+      --fond: #101719;
+      --surface: #192326;
+      --texte: #f4f7f6;
+      --secondaire: #b5c2c1;
+      --accent: #63e0d0;
+      --trait: rgba(255, 255, 255, 0.15);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .conteneur {
+      width: min(1100px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--trait);
+    }
+
+    .navigation {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .marque {
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .marque span { color: var(--accent); }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    nav a { color: var(--secondaire); }
+    nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
+
+    main { padding-block: 72px 88px; }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .introduction {
+      max-width: 620px;
+      margin-bottom: 42px;
+      color: var(--secondaire);
+      font-size: 1.08rem;
+    }
+
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    figure {
+      margin: 0;
+      background: var(--surface);
+    }
+
+    figure a {
+      display: block;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      transition: transform 220ms ease;
+    }
+
+    figure a:hover img {
+      transform: scale(1.03);
+    }
+
+    figcaption {
+      padding: 13px 15px;
+      color: var(--secondaire);
+      font-size: 0.92rem;
+    }
+
+    .retour {
+      display: inline-block;
+      margin-top: 42px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    footer {
+      padding-block: 24px;
+      border-top: 1px solid var(--trait);
+      color: var(--secondaire);
+      font-size: 0.9rem;
+    }
+
+    .pied-interieur {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    @media (max-width: 760px) {
+      .conteneur { width: min(100% - 32px, 1100px); }
+      .navigation {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 16px;
+      }
+      nav { gap: 10px 18px; }
+      main { padding-top: 52px; }
+      .galerie { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      figure img { height: 250px; }
+      .pied-interieur { flex-direction: column; }
+    }
+
+    @media (max-width: 480px) {
+      .galerie { grid-template-columns: 1fr; }
+      figure img { height: 300px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="conteneur navigation">
+      <a class="marque" href="Accueil.html">BELL A NKONEN<span>.</span></a>
+
+      <nav aria-label="Navigation principale">
+        <a href="Accueil.html">Accueil</a>
+        <a href="Escrime.html">Profil</a>
+        <a href="palmares.html">Palmarès</a>
+        <a href="galerie.html" aria-current="page">Galerie</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteneur">
+    <h1>Galerie <span>photos</span></h1>
+    <p class="introduction">
+      Quelques images de Bell A Nkonen Jonathan et de sa pratique de l’escrime.
+      Sélectionne une photo pour l’ouvrir en grand.
+    </p>
+
+    <section class="galerie" aria-label="Photos d’escrime">
+      <figure>
+          <img src="IMG-20260908-WA0004.jpg"
+               alt="Bell A Nkonen Jonathan en tenue d’escrime" loading="lazy">
+        </a>
+        <figcaption>Bell A Nkonen Jonathan</figcaption>
+      </figure>
+
+      <figure>
+          <img src="IMG-20260808-WA0054.jpg"
+               alt="Moment d’escrime sur la piste" loading="lazy">
+        </a>
+        <figcaption>Sur la piste</figcaption>
+      </figure>
+
+      <figure>
+          <img src="IMG-20260503-WA0013.jpg"
+               alt="Pratique de l’escrime" loading="lazy">
+        </a>
+        <figcaption>À l’entraînement</figcaption>
+      </figure>
+
+      <figure>
+          <img src="IMG-20260802-WA0029.jpg"
+               alt="Équipement et pratique de l’escrime" loading="lazy">
+        </a>
+        <figcaption>Escrime</figcaption>
+      </figure>
+
+      <figure>
+          <img src="IMG-20260503-WA0013.jpg"
+               alt="Photo de la galerie d’escrime" loading="lazy">
+        </a>
+        <figcaption>Un moment d’escrime</figcaption>
+      </figure>
+
+      <figure>
+          <img src="IMG-20260808-WA0054.jpg"
+               alt="Photo de Bell A Nkonen Jonathan" loading="lazy">
+        </a>
+        <figcaption>Bell A Nkonen · Cameroun</figcaption>
+      </figure>
+    </section>
+
+    <a class="retour" href="Accueil.html">← Retour à l’accueil</a>
+  </main>
+
+  <footer>
+    <div class="conteneur pied-interieur">
+      <span>© <span id="annee"></span> Bell A Nkonen Jonathan</span>
+      <span>Yaoundé · Cameroun</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector("#annee").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
