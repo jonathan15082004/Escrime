@@ -5,14 +5,14 @@ Site personnel présentant Bell A Nkonen Jonathan, escrimeur camerounais spécia
 ## Pages du site
 
 - `index.html` — présentation de l’escrimeur
-- `Escrime.html` — profil
+- `escrime.html` — profil
 - `palmares.html` — palmarès et résultats
 - `galerie.html` — galerie de photos
-- `Armes et cibles.html` — présentation des armes et de leurs cibles
+- `armes et cibles.html` — présentation des armes et de leurs cibles
 
 ## Ouvrir le site
 
-Ouvre `Accueil.html` dans un navigateur Internet. Pour que les images s’affichent, conserve les dossiers de photos à côté des pages HTML.
+Ouvre `index.html` dans un navigateur Internet. Pour que les images s’affichent, conserve les dossiers de photos à côté des pages HTML.
 
 ## Publication
 
