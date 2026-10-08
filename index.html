@@ -421,9 +421,27 @@
         <span>Bell A Nkonen</span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        Menu
-      </button>
+      
+      <div class="menu">
+        <button
+          class="bouton-menu"
+          id="bouton-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="liens-menu">
+          Menu ☰
+        </button>
+
+        <nav class="liens-menu" id="liens-menu" aria-label="Navigation principale" hidden>
+          <a href="escrime.html">Profil</a>
+          <a href="armes et cibles.html">Armes</a>
+          <a href="palmares.html">Palmarès</a>
+          <a href="galerie.html">Galerie</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
 
       <div class="nav-links" id="nav-links">
         <a href="escrime.html">Profil</a>
