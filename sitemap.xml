@@ -2,20 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jonathan15082004.github.io/Escrime/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://jonathan15082004.github.io/Escrime/index.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jonathan15082004.github.io/Escrime/escrime.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jonathan15082004.github.io/Escrime/palmares.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jonathan15082004.github.io/Escrime/galerie.html</loc>
+    <lastmod>2026-10-08</lastmod>
+     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://jonathan15082004.github.io/Escrime/armes et cibles.html</loc>
+    <lastmod>2026-10-08</lastmod>
+     <priority>0.8</priority>
   </url>
 </urlset>
